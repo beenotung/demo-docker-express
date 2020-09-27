@@ -2,6 +2,10 @@
 
 demo repo of putting express app inside docker
 
+github repo: https://github.com/beenotung/demo-docker-express
+
+docker hub repo: https://hub.docker.com/repository/docker/aabbcc1241/demo-express
+
 ## Run with docker-compose directly
 
 ```bash
