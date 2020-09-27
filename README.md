@@ -26,7 +26,7 @@ You should see a json message displayed on the browser as below:
 
 ## Build docker image for customizable container deployment
 
-## build docker image
+### build docker image
 ```bash
 docker image build --tag demo-app:1.0 .
 ```
