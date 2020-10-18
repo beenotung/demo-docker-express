@@ -22,7 +22,11 @@ Then you can open the browser at http://localhost:8080/
 
 You should see a json message displayed on the browser as below:
 ```json
-{"message":"hello, world"}
+{
+  "message": "hello, world",
+  "portInContainer": "9090",
+  "hasSeenWorker": true
+}
 ```
 
 ## Build docker image for customizable container deployment
