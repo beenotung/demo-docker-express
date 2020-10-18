@@ -1,4 +1,4 @@
-FROM node:lts
+FROM node:12.18.3-slim
 
 # Set the working directory.
 WORKDIR /usr/src/app
