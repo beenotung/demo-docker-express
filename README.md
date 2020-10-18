@@ -1,8 +1,9 @@
-# demo-docker-express
+# demo-docker-express-cluster
 
-demo repo of putting express app inside docker
+Demo repo of putting express app inside docker,
+and connect that container from other container using docker-provided virtual network
 
-github repo: https://github.com/beenotung/demo-docker-express
+github repo: https://github.com/beenotung/demo-docker-express-cluster
 
 docker hub repo: https://hub.docker.com/repository/docker/aabbcc1241/demo-express
 
@@ -28,7 +29,7 @@ You should see a json message displayed on the browser as below:
 
 ### build docker image
 ```bash
-docker image build --tag demo-app:1.0 .
+docker image build --tag demo-app:1.0 main
 ```
 
 ### export docker image into file
@@ -38,7 +39,7 @@ docker image save demo-app:1.0 > image.tar
 
 ### compress image file
 ```bash
-xz -k image.tar
+xz -k -T0 image.tar
 ```
 
 (transfer to other machine if needed)
