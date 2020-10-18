@@ -2,5 +2,8 @@ version: '3'
 services:
   app:
     build: .
+    environment:
+      port: 9090
     ports:
-      - "8080:8080"
+      # map host's 8100 port to container's 9090 port
+      - "8100:9090"

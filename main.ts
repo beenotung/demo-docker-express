@@ -9,10 +9,11 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
     res.json({
         message: 'hello, world',
+        'port in container': PORT,
     });
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.port || 8080;
 app.listen(PORT, () => {
     console.log(`[info] listening to Port: ${PORT}`);
 });
